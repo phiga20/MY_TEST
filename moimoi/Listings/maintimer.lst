@@ -1,0 +1,36 @@
+C51 COMPILER V9.60.7.0   MAINTIMER                                                         08/30/2023 04:17:53 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAINTIMER
+OBJECT MODULE PLACED IN .\Objects\maintimer.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE maintimer.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
+                    -\maintimer.lst) TABS(2) OBJECT(.\Objects\maintimer.obj)
+
+line level    source
+
+   1          #include <REGX51.H>
+   2          #include "timer.h"
+   3          #define LED P2_0
+   4          int main(){
+   5   1        LED = 0 ;
+   6   1        while(1){
+   7   2          LED = ~LED;
+   8   2          DELAY_50ms(40);
+   9   2          LED = 0;
+  10   2          DELAY_50ms(20);
+  11   2          }
+  12   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     22    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

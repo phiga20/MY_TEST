@@ -1,0 +1,105 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/30/2023  04:17:53  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\maintimer.obj, .\Objects\timer.obj TO .\Objects\timer PRINT (.\Listings\timer.m51)
+>> 
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\maintimer.obj (MAINTIMER)
+  .\Objects\timer.obj (TIMER)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\timer (MAINTIMER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0023H     UNIT         ?PR?_DELAY_50MS?TIMER
+            CODE    0823H     0016H     UNIT         ?PR?MAIN?MAINTIMER
+            CODE    0839H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\timer (MAINTIMER)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAINTIMER
+
+?PR?MAIN?MAINTIMER
+  +--> ?PR?_DELAY_50MS?TIMER
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\timer (MAINTIMER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAINTIMER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.0       PUBLIC        P2_0
+  C:0823H         PUBLIC        main
+  -------         PROC          MAIN
+  C:0823H         LINE#         4
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/30/2023  04:17:53  PAGE 2
+
+
+  C:0823H         LINE#         5
+  C:0825H         LINE#         6
+  C:0825H         LINE#         7
+  C:0827H         LINE#         8
+  C:082EH         LINE#         9
+  C:0830H         LINE#         10
+  C:0837H         LINE#         11
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAINTIMER
+
+  -------         MODULE        TIMER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0800H         PUBLIC        _DELAY_50ms
+  D:0089H         PUBLIC        TMOD
+  B:0088H.5       PUBLIC        TF0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  -------         PROC          _DELAY_50MS
+  D:0006H         SYMBOL        value
+  C:0800H         LINE#         3
+  C:0800H         LINE#         4
+  C:0809H         LINE#         5
+  C:080CH         LINE#         6
+  C:080FH         LINE#         7
+  C:0812H         LINE#         8
+  C:0814H         LINE#         9
+  C:0817H         LINE#         10
+  C:0819H         LINE#         11
+  C:081BH         LINE#         12
+  C:0820H         LINE#         13
+  C:0822H         LINE#         14
+  -------         ENDPROC       _DELAY_50MS
+  -------         ENDMOD        TIMER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0039H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=72
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

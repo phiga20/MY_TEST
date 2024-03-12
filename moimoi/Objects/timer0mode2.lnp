@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\TIMER0_MODE2.obj" 
+TO ".\Objects\timer0mode2" 
+PRINT(".\Listings\timer0mode2.m51")

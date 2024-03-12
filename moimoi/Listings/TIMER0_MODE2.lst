@@ -1,0 +1,28 @@
+C51 COMPILER V9.60.7.0   TIMER0_MODE2                                                      08/05/2023 10:14:59 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE TIMER0_MODE2
+OBJECT MODULE PLACED IN .\Objects\TIMER0_MODE2.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE TIMER0_MODE2.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listi
+                    -ngs\TIMER0_MODE2.lst) TABS(2) OBJECT(.\Objects\TIMER0_MODE2.obj)
+
+line level    source
+
+   1          #include <REGX51.H>
+   2          #include "TIMER0_MODE2.h"
+*** WARNING C315 IN LINE 1 OF TIMER0_MODE2.h: unknown #directive 'infdefine'
+*** WARNING C312 IN LINE 5 OF TIMER0_MODE2.h: misplaced endif control
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  2 WARNING(S),  0 ERROR(S)
