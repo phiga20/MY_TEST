@@ -1,5 +1,10 @@
-INCLUDE"STDIO.H"
+#include<stdio.h>
 int main(){
- int a=5;
- printf("%d", &a);
+ int a=6, b=7;
+ //index(&a, &b);
+ printf("%d", index(&a, &b));
+}
+int index(int *a, int *b){
+	int c = *a+*b;
+	return c;
 }
